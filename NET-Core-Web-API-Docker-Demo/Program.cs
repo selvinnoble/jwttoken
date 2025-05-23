@@ -77,7 +77,7 @@ builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
     {
-        policy.WithOrigins("http://192.168.254.204:8089", "http://localhost:5173");
+        policy.WithOrigins("http://192.168.254.204:8089", "https://jwtappservices-e9bxgec8fpdsd4dd.canadacentral-01.azurewebsites.net");
         policy.AllowAnyHeader();
         policy.AllowAnyMethod();
         policy.AllowCredentials();
